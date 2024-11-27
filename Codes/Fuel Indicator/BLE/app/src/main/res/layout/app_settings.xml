@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<RelativeLayout android:id="@+id/RelativeLayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/settings_background"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:text="Setup Application Settings"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		<TextView android:id="@+id/textViewSep" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:layout_below="@+id/textView1" android:text=" "
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textViewSep"
+			android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@+id/btnPickContactSMS"
+			android:text="Enter Phone Numbers for Sending SMS (Separated by Comma)"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/txtPhoneNumbersSMS"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textView2"
+			android:layout_alignParentLeft="true"
+			android:ems="10"
+			android:hint="Messages go on these Numbers">
+
+			<requestFocus />
+		</EditText>
+
+		<TextView android:id="@+id/textViewSep2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/txtPhoneNumbersSMS"
+			android:text=" " android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textViewSep2"
+			android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@+id/btnPickContactCall"
+			android:text="Enter the Emergency Phone Number for Calling"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText android:id="@+id/txtPhoneNumberCall"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/textView3"
+			android:ems="10" android:hint="Call goes on this number" />
+
+		<TextView android:id="@+id/textViewSep3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/txtPhoneNumberCall"
+			android:text=" " android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<CheckBox
+			android:id="@+id/chkSendLocation"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textViewSep3"
+			android:layout_alignParentLeft="true"
+			android:text="Send my Location" />
+
+		<CheckBox
+			android:id="@+id/chkSendIMEI"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"
+			android:layout_below="@+id/chkSendLocation"
+			android:layout_alignParentLeft="true"
+			android:text="Send my Device ID (IMEI)" />
+
+		<TextView
+			android:id="@+id/textView4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/chkSendIMEI"
+			android:layout_alignParentLeft="true"
+			android:text="Enter your message"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText android:id="@+id/txtEmergencyMessage"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/textView4"
+			android:ems="10" android:inputType="textPostalAddress" />
+
+		<Button
+			android:id="@+id/btnSettingsSave"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/txtEmergencyMessage"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/custom_button_green"
+			android:text="Save Settings" />
+
+		<Button android:id="@+id/btnDiscardChanges"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/btnSettingsSave"
+			android:background="@drawable/custom_button_red" android:text="Discard Changes" />
+
+		<Button
+			android:id="@+id/btnClearLogs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btnDiscardChanges"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/custom_button_brown"
+			android:text="Clear Location Logs" />
+		
+		<Button android:id="@+id/btnPickContactSMS"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_above="@+id/txtPhoneNumbersSMS"
+			android:layout_alignParentRight="true" android:background="@drawable/custom_button_brown"
+			android:text="Pick Contact SMS" />
+
+		<Button android:id="@+id/btnPickContactCall"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_above="@+id/txtPhoneNumberCall"
+			android:layout_alignParentRight="true" android:background="@drawable/custom_button_brown"
+			android:text="Pick Contact Call" />
+
+		<Button android:id="@+id/btnPickSMS" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_above="@+id/txtEmergencyMessage"
+			android:layout_alignParentRight="true" android:background="@drawable/custom_button_brown"
+			android:text="Check Inbox" />
+
+	</RelativeLayout>
+
+</ScrollView>

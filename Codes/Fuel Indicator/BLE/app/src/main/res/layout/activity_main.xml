@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Current Status"
+            android:textSize="30sp"></TextView>
+
+
+        <com.github.anastr.speedviewlib.AwesomeSpeedometer
+            android:id="@+id/prgLevels"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:min="0"
+            android:max="100"
+            android:layout_centerHorizontal="true"
+            app:sv_unit="ltrs."
+            app:sv_withTremble="false"
+            android:layout_below="@id/lblStatus"
+            android:padding="10dp"></com.github.anastr.speedviewlib.AwesomeSpeedometer>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Enter Max Fuel Capacity (ltrs.)"
+            android:textSize="30dp"
+            android:layout_below="@id/prgLevels"
+            android:id="@+id/lblFuel"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txtMaxFuel"
+            android:text="40"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+            android:layout_below="@+id/lblFuel"
+            android:layout_height="wrap_content"></EditText>
+    </RelativeLayout>
+</ScrollView>

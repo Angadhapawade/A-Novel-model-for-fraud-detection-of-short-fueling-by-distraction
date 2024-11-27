@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Fuel Monitoring</string>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="setting">Setting</string>
+    <string name="searchdevice">Search Device</string>
+    <string name="monitor">Monitor</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="uri">http://www.iteadstudio.com</string>
+    <string name="message">Are you sure?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>Chinese</item>
+    </string-array>
+    <string name="open">Open Bluetooth</string>
+    <string name="close">Close Bluetooch</string>
+    <string name="allowdiscoverable">Allow Discoverable</string>
+    <string name="bluetoothmessage">Your bluetooch device is disable, please make it
+		enable first.</string>
+    <string name="strreturn">Return</string>
+    <string name="scaning">Scaning...</string>
+    <string name="nodevice">There isn\'t bluetooch devices!</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="hexview">View as Hex</string>
+    <string name="hexsend">Send as Hex</string>
+    <string name="selectonedevice">select device to connect</string>
+    <string name="version">version:1.0.0</string>
+    <string name="about1">ITEAD BT Debugging Assistant is used to monitor /
+		test Bluetooth communication between android and Bluetooth Serial
+		module. It\'s compatible with our BTBee module and Arduino BT shield
+		v2.1, you can use this module or shield to connect your android cell
+		phone with PC or arduino boards, by this software you can monitor all
+		data during the Bluetooth communication.
+	</string>
+    <string name="about_us">About us</string>
+    <string name="about2">For more information and new version, you can visit
+		our blog
+		http://www.iteadstudio.com</string>
+    <string name="about3">If you have any question, just feel free to contact
+		us by
+		info@iteadstudio.com</string>
+    <string name="ioexception">Connect failed!</string>
+    <string name="wait">Wait to connect the device...</string>
+    <string name="number">Please input the valid hex character.
+		ex:\'0-9\',\'A-F\',\'a-f\'.</string>
+    <string name="newline">Send as New Line</string>
+</resources>
